@@ -1,0 +1,5 @@
+node_modules
+.env
+
+# daemon is folder with logs and other config data used by node-windows
+daemon
