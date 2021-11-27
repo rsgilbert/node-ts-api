@@ -6,16 +6,19 @@
     "scripts": {
         "start": "tsc && node --unhandled-rejections=strict ./dist/app.js",
         "debug": "set DEBUG=* && npm run start",
+        "debuglinux": "export DEBUG=* && npm run start",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
     "author": "gilberts <gssenyonjo@gmail.com>",
     "license": "MIT",
     "dependencies": {
+        "@types/shortid": "^0.0.29",
         "cors": "^2.8.5",
         "debug": "^4.3.2",
         "express": "^4.17.1",
         "express-winston": "^4.2.0",
+        "shortid": "^2.2.16",
         "winston": "^3.3.3"
     },
     "devDependencies": {
