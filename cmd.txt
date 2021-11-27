@@ -1,2 +1,10 @@
 // Initialize project
 npm init 
+
+// Install express and helpful libraries
+npm i express debug winston express-winston cors
+
+// Install development dependencies for our typescript configuration
+npm i --save-dev @types/cors @types/express @types/debug source-map-support tslint typescript
+
+
