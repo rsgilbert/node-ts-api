@@ -38,8 +38,9 @@ class UsersController {
         if(req.body.password) {
             req.body.password = await argon2.hash(req.body.password)
         }
-        log(await usersService.patchById(req.body.id, req.body))
-        res.status(204).send();
+        const patchResult = (await usersService.patchById(req.body.id, req.body))
+        console.log(patchResult)
+        res.status(204).send(patchResult);
     }
 
     async put(req: express.Request, res: express.Response) {
